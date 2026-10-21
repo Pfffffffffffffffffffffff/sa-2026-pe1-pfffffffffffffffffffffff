@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="890" viewBox="0 0 1760 890" role="img" aria-labelledby="title desc">
+  <title id="title">Сдача учебного задания: черновая гипотеза процесса</title>
+  <desc id="desc">Схема взаимодействия студента, преподавателя и учебной системы при выдаче, выполнении, сдаче и проверке задания. Последовательность не подтверждена наблюдениями.</desc>
+  <defs>
+    <marker id="arrow-green" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#15803d"/></marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#2563eb"/></marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#c2410c"/></marker>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #172554; }
+      .lane { stroke-width: 1.5; }
+      .label { font-size: 13px; font-weight: 700; letter-spacing: 1px; }
+      .task { stroke-width: 1.6; rx: 8; }
+      .tasktext { font-size: 15px; text-anchor: middle; }
+      .flow { fill: none; stroke: #15803d; stroke-width: 2.2; marker-end: url(#arrow-green); }
+      .message { fill: none; stroke: #2563eb; stroke-width: 2; stroke-dasharray: 8 6; marker-end: url(#arrow-blue); }
+      .question { fill: none; stroke: #c2410c; stroke-width: 2; stroke-dasharray: 7 5; marker-end: url(#arrow-orange); }
+      .branch { font-size: 12px; font-weight: 700; fill: #475569; }
+    </style>
+  </defs>
+  <rect width="1760" height="890" fill="#ffffff"/>
+  <text x="44" y="48" font-size="25" font-weight="700">Сдача учебного задания</text>
+  <text x="44" y="76" font-size="14" fill="#b45309">ЧЕРНОВАЯ ГИПОТЕЗА. Не подтверждена наблюдениями; шаги и развилки нужно сверить с практикой.</text>
+
+  <rect class="lane" x="40" y="105" width="1680" height="205" fill="#fff7ed" stroke="#fdba74"/>
+  <rect class="lane" x="40" y="325" width="1680" height="255" fill="#f0fdf4" stroke="#86efac"/>
+  <rect class="lane" x="40" y="595" width="1680" height="250" fill="#eff6ff" stroke="#93c5fd"/>
+  <text class="label" x="58" y="137" fill="#9a3412">ПРЕПОДАВАТЕЛЬ</text>
+  <text class="label" x="58" y="357" fill="#166534">СТУДЕНТ</text>
+  <text class="label" x="58" y="627" fill="#1d4ed8">LMS / УЧЕБНАЯ СИСТЕМА</text>
+
+  <path class="flow" d="M242 448 H265"/>
+  <path class="flow" d="M400 444 H440"/>
+  <path class="flow" d="M610 444 H650"/>
+  <path class="flow" d="M735 435 H850"/>
+  <path class="flow" d="M1005 444 H1040"/>
+  <path class="flow" d="M1125 435 H1190"/>
+  <path class="flow" d="M1040 465 C1015 520 965 540 930 477"/>
+  <path class="flow" d="M695 485 V520 H610"/>
+  <path class="question" d="M765 540 C805 540 785 240 820 210"/>
+  <path class="question" d="M820 230 C760 300 615 330 535 410"/>
+  <path class="message" d="M325 240 C300 295 330 340 330 410"/>
+  <path class="message" d="M1335 444 C1370 500 1325 640 1315 685"/>
+  <path class="message" d="M1400 720 C1450 680 1430 300 1425 240"/>
+  <path class="question" d="M1500 210 H1620"/>
+  <path class="question" d="M1570 245 C1545 315 1350 300 1305 685"/>
+  <path class="message" d="M1680 210 C1710 330 1660 550 1605 685"/>
+  <path class="message" d="M1510 720 C1460 650 1570 530 1580 478"/>
+  <path class="flow" d="M1680 444 H1700"/>
+
+  <circle cx="224" cy="444" r="19" fill="#fff" stroke="#15803d" stroke-width="2"/>
+  <circle cx="224" cy="444" r="15" fill="none" stroke="#15803d" stroke-width="1"/>
+  <rect class="task" x="265" y="410" width="135" height="68" fill="#dcfce7" stroke="#22c55e"/>
+  <text class="tasktext" x="332" y="438"><tspan x="332">Получает</tspan><tspan x="332" dy="19">задание</tspan></text>
+  <rect class="task" x="440" y="410" width="170" height="68" fill="#dcfce7" stroke="#22c55e"/>
+  <text class="tasktext" x="525" y="438"><tspan x="525">Читает условия,</tspan><tspan x="525" dy="19">фиксирует срок</tspan></text>
+  <polygon points="692,400 735,443 692,486 649,443" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.6"/>
+  <text class="tasktext" x="692" y="439" font-size="13"><tspan x="692">Условия</tspan><tspan x="692" dy="17">понятны?</tspan></text>
+  <text class="branch" x="775" y="426">Да</text>
+  <text class="branch" x="705" y="510">Нет</text>
+  <rect class="task" x="610" y="520" width="155" height="48" fill="#dcfce7" stroke="#22c55e"/>
+  <text class="tasktext" x="687" y="550">Запрашивает уточнение</text>
+  <rect class="task" x="850" y="410" width="155" height="68" fill="#dcfce7" stroke="#22c55e"/>
+  <text class="tasktext" x="927" y="438"><tspan x="927">Выполняет</tspan><tspan x="927" dy="19">работу</tspan></text>
+  <polygon points="1082,400 1125,443 1082,486 1039,443" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.6"/>
+  <text class="tasktext" x="1082" y="439" font-size="13"><tspan x="1082">Готово</tspan><tspan x="1082" dy="17">к сдаче?</tspan></text>
+  <text class="branch" x="1140" y="426">Да</text>
+  <text class="branch" x="995" y="530">Нет</text>
+  <rect class="task" x="1190" y="410" width="145" height="68" fill="#dcfce7" stroke="#22c55e"/>
+  <text class="tasktext" x="1262" y="438"><tspan x="1262">Отправляет</tspan><tspan x="1262" dy="19">работу</tspan></text>
+  <rect class="task" x="820" y="175" width="155" height="65" fill="#ffedd5" stroke="#fb923c"/>
+  <text class="tasktext" x="897" y="202"><tspan x="897">Отвечает на</tspan><tspan x="897" dy="19">вопрос</tspan></text>
+  <rect class="task" x="250" y="175" width="150" height="65" fill="#ffedd5" stroke="#fb923c"/>
+  <text class="tasktext" x="325" y="202"><tspan x="325">Публикует</tspan><tspan x="325" dy="19">задание</tspan></text>
+  <rect class="task" x="1350" y="175" width="150" height="65" fill="#ffedd5" stroke="#fb923c"/>
+  <text class="tasktext" x="1425" y="202"><tspan x="1425">Проверяет</tspan><tspan x="1425" dy="19">работу</tspan></text>
+  <polygon points="1570,165 1615,210 1570,255 1525,210" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.6"/>
+  <text class="tasktext" x="1570" y="215" font-size="13">Принято?</text>
+  <rect class="task" x="1620" y="175" width="120" height="65" fill="#ffedd5" stroke="#fb923c"/>
+  <text class="tasktext" x="1680" y="202"><tspan x="1680">Вносит</tspan><tspan x="1680" dy="19">результат</tspan></text>
+  <text class="branch" x="1600" y="196">Да</text>
+  <text class="branch" x="1515" y="290">Нет: на доработку</text>
+  <rect class="task" x="1230" y="685" width="170" height="68" fill="#dbeafe" stroke="#3b82f6"/>
+  <text class="tasktext" x="1315" y="713"><tspan x="1315">Фиксирует отправку,</tspan><tspan x="1315" dy="19">передает работу</tspan></text>
+  <rect class="task" x="1510" y="685" width="190" height="68" fill="#dbeafe" stroke="#3b82f6"/>
+  <text class="tasktext" x="1605" y="713"><tspan x="1605">Публикует результат,</tspan><tspan x="1605" dy="19">уведомляет студента</tspan></text>
+  <rect class="task" x="1530" y="410" width="150" height="68" fill="#dcfce7" stroke="#22c55e"/>
+  <text class="tasktext" x="1605" y="438"><tspan x="1605">Просматривает</tspan><tspan x="1605" dy="19">результат</tspan></text>
+  <circle cx="1719" cy="444" r="19" fill="#fff" stroke="#15803d" stroke-width="3"/>
+  <circle cx="1719" cy="444" r="14" fill="none" stroke="#15803d" stroke-width="1"/>
+  <text x="44" y="872" font-size="12" fill="#475569">Пунктир — передача информации между участниками. Развилки и возврат на доработку — сценарии, которые нужно проверить при наблюдении.</text>
+</svg>
