@@ -1,0 +1,5 @@
+node,student,lms,teacher,chat
+student,0,1,0,1
+lms,1,0,1,0
+teacher,0,1,0,1
+chat,1,0,1,0

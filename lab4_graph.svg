@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Граф системы сдачи учебного задания</title>
+<desc id="desc">Направленные связи между студентом, LMS, преподавателем и чатом курса. Цвета различают сдачу, обратную связь и поддержку.</desc>
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="context-stroke"/></marker>
+<style>text{font-family:Arial,sans-serif;fill:#172554}.edge{fill:none;stroke-width:2.4;marker-end:url(#arrow)}.node{stroke-width:2;rx:10}.label{font-size:14px;text-anchor:middle}.flow{font-size:12px;text-anchor:middle;fill:#334155}.legend{font-size:13px}</style>
+</defs>
+<rect width="1200" height="650" fill="#ffffff"/>
+<text x="40" y="42" font-size="24" font-weight="700">Граф связей: сдача учебного задания</text>
+<text x="40" y="68" font-size="14" fill="#475569">Граф строится скриптом из lab4_adjacency.csv и подписывается по lab4_edges.csv</text>
+<path class="edge" d="M 326 208 C 408 132 512 132 594 208" stroke="#2563eb" marker-end="url(#arrow)"/>
+<text class="flow" x="460" y="151" paint-order="stroke" stroke="white" stroke-width="5">Файл работы и дата сдачи</text>
+<path class="edge" d="M 298 264 C 365 376 500 445 612 486" stroke="#c2410c" marker-end="url(#arrow)"/>
+<text class="flow" x="412" y="403" paint-order="stroke" stroke="white" stroke-width="5">Вопрос по заданию</text>
+<path class="edge" d="M 594 242 C 512 318 408 318 326 242" stroke="#16803c" marker-end="url(#arrow)"/>
+<text class="flow" x="460" y="305" paint-order="stroke" stroke="white" stroke-width="5">Статус и обратная связь</text>
+<path class="edge" d="M 686 208 C 768 132 872 132 954 208" stroke="#2563eb" marker-end="url(#arrow)"/>
+<text class="flow" x="820" y="151" paint-order="stroke" stroke="white" stroke-width="5">Работа и уведомление о сдаче</text>
+<path class="edge" d="M 954 242 C 872 318 768 318 686 242" stroke="#16803c" marker-end="url(#arrow)"/>
+<text class="flow" x="820" y="305" paint-order="stroke" stroke="white" stroke-width="5">Оценка и комментарии</text>
+<path class="edge" d="M 982 264 C 915 376 780 445 668 486" stroke="#c2410c" marker-end="url(#arrow)"/>
+<text class="flow" x="868" y="403" paint-order="stroke" stroke="white" stroke-width="5">Разъяснение задания</text>
+<path class="edge" d="M 606 514 C 470 463 350 375 282 264" stroke="#c2410c" marker-end="url(#arrow)"/>
+<text class="flow" x="407" y="468" paint-order="stroke" stroke="white" stroke-width="5">Разъяснение задания</text>
+<path class="edge" d="M 674 514 C 810 463 930 375 998 264" stroke="#c2410c" marker-end="url(#arrow)"/>
+<text class="flow" x="872" y="468" paint-order="stroke" stroke="white" stroke-width="5">Вопрос студента</text>
+<rect class="node" x="160" y="190" width="180" height="60" fill="#ecfdf5" stroke="#16a34a"/>
+<text class="label" x="250" y="225" font-weight="700">Студент</text>
+<rect class="node" x="550" y="190" width="180" height="60" fill="#eff6ff" stroke="#2563eb"/>
+<text class="label" x="640" y="225" font-weight="700">LMS / учебная система</text>
+<rect class="node" x="940" y="190" width="180" height="60" fill="#fff7ed" stroke="#ea580c"/>
+<text class="label" x="1030" y="225" font-weight="700">Преподаватель</text>
+<rect class="node" x="550" y="470" width="180" height="60" fill="#f8fafc" stroke="#64748b"/>
+<text class="label" x="640" y="505" font-weight="700">Чат курса</text>
+<line x1="55" y1="600" x2="95" y2="600" stroke="#2563eb" stroke-width="3"/>
+<text class="legend" x="105" y="605">сдача</text>
+<line x1="220" y1="600" x2="260" y2="600" stroke="#16803c" stroke-width="3"/>
+<text class="legend" x="270" y="605">оценка и обратная связь</text>
+<line x1="500" y1="600" x2="540" y2="600" stroke="#c2410c" stroke-width="3"/>
+<text class="legend" x="550" y="605">вопросы и разъяснения</text>
+</svg>

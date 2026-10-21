@@ -1,0 +1,5 @@
+node,in_degree,out_degree,total_degree
+student,2,2,4
+lms,2,2,4
+teacher,2,2,4
+chat,2,2,4

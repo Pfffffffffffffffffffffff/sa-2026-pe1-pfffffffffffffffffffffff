@@ -1,0 +1,9 @@
+source,target,flow,mission
+student,lms,Файл работы и дата сдачи,submission
+lms,teacher,Работа и уведомление о сдаче,submission
+teacher,lms,Оценка и комментарии,feedback
+lms,student,Статус и обратная связь,feedback
+student,chat,Вопрос по заданию,support
+chat,teacher,Вопрос студента,support
+teacher,chat,Разъяснение задания,support
+chat,student,Разъяснение задания,support

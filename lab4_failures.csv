@@ -1,0 +1,3 @@
+removed_node,submission_path,feedback_path,system_operational,result
+lms,false,false,false,Критическая точка отказа
+chat,true,true,true,Функция сохраняется
