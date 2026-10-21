@@ -1,9 +1,7 @@
 source,target,flow,mission
-student,lms,Файл работы и дата сдачи,submission
-lms,teacher,Работа и уведомление о сдаче,submission
-teacher,lms,Оценка и комментарии,feedback
-lms,student,Статус и обратная связь,feedback
-student,chat,Вопрос по заданию,support
-chat,teacher,Вопрос студента,support
-teacher,chat,Разъяснение задания,support
-chat,student,Разъяснение задания,support
+resident,dispatcher,Адрес и описание проблемы,intake
+dispatcher,requests,Карточка заявки и приоритет,intake
+requests,uk,Заявка в работу,intake
+uk,requests,Назначение и результат,processing
+requests,dispatcher,Очередь и статус заявки,processing
+dispatcher,resident,Номер и статус заявки,response

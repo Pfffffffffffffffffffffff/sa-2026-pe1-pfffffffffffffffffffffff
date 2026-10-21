@@ -1,3 +1,4 @@
-removed_node,submission_path,feedback_path,system_operational,result
-lms,false,false,false,Критическая точка отказа
-chat,true,true,true,Функция сохраняется
+removed_node,intake_path,response_path,system_operational,result
+dispatcher,false,false,false,Критическая точка отказа
+requests,false,false,false,Критическая точка отказа
+uk,false,false,false,Критическая точка отказа

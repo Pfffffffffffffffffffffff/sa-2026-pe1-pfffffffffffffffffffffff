@@ -1,0 +1,2 @@
+failure_node,detect_after_min,active_work_hours,work_outlasts_detection_min,basis
+dispatcher,15,8.0,465,Сценарное допущение: нет подтвержденного SLA; уже переданные заявки продолжают выполняться в пределах одной смены

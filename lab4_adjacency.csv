@@ -1,5 +1,5 @@
-node,student,lms,teacher,chat
-student,0,1,0,1
-lms,1,0,1,0
-teacher,0,1,0,1
-chat,1,0,1,0
+node,resident,dispatcher,requests,uk
+resident,0,1,0,0
+dispatcher,1,0,1,0
+requests,0,1,0,1
+uk,0,0,1,0

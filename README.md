@@ -10,3 +10,5 @@
 - [Граф системы](lab4_graph.svg)
 - [Степени вершин](lab4_degrees.csv)
 - [Тест отказа вершин](lab4_failures.csv)
+- [Временные допущения отказа](lab4_timing_assumptions.csv)
+- [Расчёт времени отказа](lab4_failure_timing.csv)
