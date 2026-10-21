@@ -1,0 +1,56 @@
+Backlog = INTEG(Arrival Rate-Inspection Rate, Initial Backlog)
+~ requests
+~ Stock: requests waiting for workers to inspect the hot-water problem.
+|
+Arrival Rate = Base Arrival Rate*Load Multiplier
+~ requests/day
+~ Inflow of new resident requests. Base rate is an illustrative assumption.
+|
+Potential Inspection Rate = Backlog/Service Delay
+~ requests/day
+~ First-order delayed response: larger delay lowers the rate at which the queue is processed.
+|
+Inspection Rate = MIN(Potential Inspection Rate, Inspection Capacity)
+~ requests/day
+~ Outflow; bounded by available inspection capacity.
+|
+Base Arrival Rate = 10
+~ requests/day
+~ Assumed; no measured request count was provided.
+|
+Inspection Capacity = 15
+~ requests/day
+~ Assumed; no staffing or throughput data was provided.
+|
+Initial Backlog = 20
+~ requests
+~ Assumed initial queue; no queue count was observed.
+|
+Base Service Delay = 2
+~ day
+~ Approximation from the reported "couple of days" until workers arrived to inspect; based on one recollection, not a measured average.
+|
+Load Multiplier = 1
+~ dmnl
+~ Set to 2 for the doubled-load scenario.
+|
+Delay Multiplier = 1
+~ dmnl
+~ Set to 2 for the doubled-delay scenario.
+|
+Service Delay = Base Service Delay*Delay Multiplier
+~ day
+~ First-order response time.
+|
+INITIAL TIME = 0
+~ day
+~ |
+FINAL TIME = 30
+~ day
+~ |
+TIME STEP = 0.25
+~ day
+~ |
+SAVEPER = TIME STEP
+~ day
+~ |

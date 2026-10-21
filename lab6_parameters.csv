@@ -1,0 +1,11 @@
+parameter,value,units,source_status
+Base Arrival Rate,10,requests/day,Assumption: no measured arrival count was provided
+Inspection Capacity,15,requests/day,Assumption: staffing and throughput were not observed
+Initial Backlog,20,requests,Assumption: initial queue size was not observed
+Base Service Delay,2,days,Approximation from one recollection: workers arrived to inspect after a couple of days
+Simulation Horizon,30,days,Modeling choice
+Time Step,0.25,days,Modeling choice
+Load Multiplier Baseline,1,dimensionless,Scenario definition
+Load Multiplier Doubled,2,dimensionless,Scenario definition
+Delay Multiplier Baseline,1,dimensionless,Scenario definition
+Delay Multiplier Doubled,2,dimensionless,Scenario definition

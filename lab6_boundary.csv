@@ -1,0 +1,2 @@
+parameter,critical_value,units,stable_side,unstable_side,derivation
+Load Multiplier,1.5000,dimensionless,<= 1.5000: bounded,> 1.5000: growing backlog,Inspection Capacity / Base Arrival Rate

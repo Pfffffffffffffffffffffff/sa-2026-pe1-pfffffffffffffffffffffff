@@ -1,0 +1,4 @@
+scenario,arrival_rate_per_day,capacity_per_day,final_backlog,max_backlog,equilibrium_backlog_if_stable,behaviour
+Как есть,10.0000,15.0000,20.0000,20.0000,20.0000,bounded; approaches equilibrium
+Нагрузка x2,20.0000,15.0000,173.5241,173.5241,,unbounded in model; backlog grows about 5.00 requests/day after capacity saturates
+Задержка x2,10.0000,15.0000,39.9913,39.9913,40.0000,bounded; approaches equilibrium
