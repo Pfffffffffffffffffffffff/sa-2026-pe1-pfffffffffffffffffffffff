@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1780" height="870" viewBox="0 0 1780 870" role="img" aria-labelledby="title desc">
-  <title id="title">Обработка заявки жильца в УК</title>
+  <title id="title">Заявка жильца в УК: проект инструкции v1.0</title>
   <desc id="desc">Проектная модель процесса: житель сообщает о проблеме, диспетчер проверяет сведения и регистрирует заявку, УК назначает исполнителя, результат возвращается жильцу. Фактических наблюдений нет.</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#334155"/></marker>
@@ -15,8 +15,8 @@
     </style>
   </defs>
   <rect width="1780" height="870" fill="#ffffff"/>
-  <text x="42" y="42" font-size="24" font-weight="700">Обработка заявки жильца в УК</text>
-  <text x="42" y="69" font-size="14" fill="#b45309">Модель по собственным требованиям; подтверждённых наблюдений и внешнего регламента нет.</text>
+  <text x="42" y="42" font-size="24" font-weight="700">Заявка жильца в УК: проект инструкции v1.0</text>
+  <text x="42" y="69" font-size="14" fill="#b45309">Учебная модель, не утверждённая УК; наблюдений — 0.</text>
 
   <rect class="lane" x="40" y="95" width="1700" height="165" fill="#ecfdf5" stroke="#86efac"/>
   <rect class="lane" x="40" y="270" width="1700" height="180" fill="#eff6ff" stroke="#93c5fd"/>
@@ -33,16 +33,16 @@
   <path class="edge" d="M710 403 V420 H635"/>
   <path class="edge" d="M635 420 C600 245 555 230 537 215"/>
   <path class="edge" d="M537 215 C470 270 465 300 500 325"/>
+  <path class="edge" d="M 1255 700 H 1280"/>
   <path class="edge" d="M755 350 C790 350 790 510 835 530"/>
   <path class="edge" d="M1025 530 C1080 530 1080 700 1080 700"/>
-  <path class="edge" d="M1230 700 H1280"/>
-  <path class="edge" d="M1425 700 H1480"/>
+  <path class="edge" d="M1455 700 H1480"/>
   <path class="edge" d="M1525 655 C1540 550 1430 420 1390 393"/>
   <path class="edge" d="M1480 700 C1425 785 1210 785 1210 735"/>
   <path class="edge" d="M1390 325 C1440 275 1490 230 1510 180"/>
   <path class="edge" d="M1675 180 H1690"/>
 
-  <text class="edge-label" x="420" y="270">Адрес, контакт, описание</text>
+  <text class="edge-label" x="420" y="270">Адрес, контакт, время, описание</text>
   <text class="branch" x="770" y="337">Да</text>
   <text class="branch" x="720" y="420">Нет</text>
   <text class="edge-label" x="910" y="475">Номер и карточка заявки</text>
@@ -65,14 +65,14 @@
   <text class="task-text" x="537" y="174"><tspan x="537">Уточняет</tspan><tspan x="537" dy="19">сведения</tspan></text>
   <rect class="task" x="835" y="495" width="190" height="70" fill="#ffedd5" stroke="#fb923c"/>
   <text class="task-text" x="930" y="523"><tspan x="930">Регистрирует заявку,</tspan><tspan x="930" dy="19">присваивает номер</tspan></text>
-  <rect class="task" x="1080" y="665" width="150" height="70" fill="#f1f5f9" stroke="#64748b"/>
-  <text class="task-text" x="1155" y="693"><tspan x="1155">Назначает</tspan><tspan x="1155" dy="19">исполнителя</tspan></text>
-  <rect class="task" x="1280" y="665" width="145" height="70" fill="#f1f5f9" stroke="#64748b"/>
-  <text class="task-text" x="1352" y="693"><tspan x="1352">Устраняет</tspan><tspan x="1352" dy="19">проблему</tspan></text>
+  <rect class="task" x="1080" y="665" width="175" height="70" fill="#f1f5f9" stroke="#64748b"/>
+  <text class="task-text" x="1167" y="693"><tspan x="1167">Назначает исполнителя</tspan><tspan x="1167" dy="19">и плановый срок</tspan></text>
+  <rect class="task" x="1280" y="665" width="175" height="70" fill="#f1f5f9" stroke="#64748b"/>
+  <text class="task-text" x="1367" y="693"><tspan x="1367">Выполняет работу</tspan><tspan x="1367" dy="19">или сообщает причину</tspan></text>
   <polygon points="1525,655 1570,700 1525,745 1480,700" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.6"/>
   <text class="task-text" x="1525" y="696"><tspan x="1525">Работа</tspan><tspan x="1525" dy="17">выполнена?</tspan></text>
   <rect class="task" x="1300" y="325" width="185" height="68" fill="#dbeafe" stroke="#3b82f6"/>
-  <text class="task-text" x="1392" y="353"><tspan x="1392">Обновляет статус,</tspan><tspan x="1392" dy="19">сообщает результат</tspan></text>
+  <text class="task-text" x="1392" y="353"><tspan x="1392">Обновляет реестр,</tspan><tspan x="1392" dy="19">уведомляет жильца</tspan></text>
   <rect class="task" x="1510" y="145" width="165" height="70" fill="#dcfce7" stroke="#22c55e"/>
   <text class="task-text" x="1592" y="174"><tspan x="1592">Получает номер</tspan><tspan x="1592" dy="19">и результат</tspan></text>
   <circle cx="1709" cy="180" r="19" fill="#fff" stroke="#15803d" stroke-width="3"/>
