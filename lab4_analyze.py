@@ -158,17 +158,31 @@ def write_failure_timing(nodes):
     with TIMING_OUTPUT_FILE.open("w", encoding="utf-8", newline="") as output:
         writer = csv.writer(output, lineterminator="\n")
         writer.writerow(
-            ["failure_node", "detect_after_min", "active_work_hours", "work_outlasts_detection_min", "basis"]
+            [
+                "failure_node",
+                "detect_after_min",
+                "survives_hours",
+                "surviving_activity",
+                "activity_outlasts_detection_min",
+                "basis",
+            ]
         )
         for row in assumptions:
             node = row["failure_node"]
             if node not in nodes:
                 raise ValueError(f"Unknown failure node in timing assumptions: {node}")
             detect_minutes = int(row["detect_after_min"])
-            active_hours = float(row["active_work_hours"])
-            remaining_minutes = int(active_hours * 60) - detect_minutes
+            survives_hours = float(row["survives_hours"])
+            remaining_minutes = int(survives_hours * 60) - detect_minutes
             writer.writerow(
-                [node, detect_minutes, active_hours, remaining_minutes, row["basis"]]
+                [
+                    node,
+                    detect_minutes,
+                    survives_hours,
+                    row["surviving_activity"],
+                    remaining_minutes,
+                    row["basis"],
+                ]
             )
 
 
