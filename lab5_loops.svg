@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="920" viewBox="0 0 1420 920" role="img" aria-labelledby="title desc">
+  <title id="title">Причинно-следственная диаграмма: перебой горячей воды</title>
+  <desc id="desc">Две причинные петли: усиливающая эскалация срочности жильцов и балансирующая реакция на длительность перебоя. Связи отмечены знаками и как проверяемые гипотезы.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#334155"/></marker>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #172554; }
+      .node { stroke-width: 2; rx: 10; }
+      .causal-edge { fill: none; stroke: #475569; stroke-width: 2; stroke-dasharray: 8 6; marker-end: url(#arrow); }
+      .sign { font-size: 17px; font-weight: 700; text-anchor: middle; paint-order: stroke; stroke: white; stroke-width: 5px; }
+      .node-text { font-size: 14px; font-weight: 700; text-anchor: middle; }
+      .caption { font-size: 13px; fill: #475569; }
+      .loop-label { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="1420" height="920" fill="#fff"/>
+  <text x="38" y="40" font-size="24" font-weight="700">Петли обратной связи: отсутствие горячей воды</text>
+  <text x="38" y="68" font-size="13" fill="#92400e">Опора: сообщения в чате жильцов, август 2026; причинные связи — проверяемые гипотезы.</text>
+
+  <path id="e-duration-inconvenience" class="causal-edge" data-from="duration" data-to="inconvenience" data-sign="+" d="M170 630 V470"/>
+  <text class="sign" x="190" y="555">+</text>
+  <path id="e-inconvenience-urgency" class="causal-edge" data-from="inconvenience" data-to="urgency" data-sign="+" d="M280 410 C330 380 330 270 350 230"/>
+  <text class="sign" x="319" y="327">+</text>
+  <path id="e-urgency-messages" class="causal-edge" data-from="urgency" data-to="messages" data-sign="+" d="M570 230 C620 250 650 350 680 430"/>
+  <text class="sign" x="625" y="317">+</text>
+  <path id="e-messages-inaction" class="causal-edge" data-from="messages" data-to="inaction" data-sign="+" d="M890 435 C965 390 1030 300 1090 270"/>
+  <text class="sign" x="978" y="348">+</text>
+  <path id="e-inaction-urgency" class="causal-edge" data-from="inaction" data-to="urgency" data-sign="+" d="M1000 210 C850 92 555 92 460 190"/>
+  <text class="sign" x="730" y="112">+</text>
+
+  <path id="e-duration-messages" class="causal-edge" data-from="duration" data-to="messages" data-sign="+" d="M280 680 C405 820 545 640 650 495"/>
+  <text class="sign" x="462" y="700">+</text>
+  <path id="e-messages-priority" class="causal-edge" data-from="messages" data-to="priority" data-sign="+" d="M890 480 C945 505 970 540 1010 570"/>
+  <text class="sign" x="951" y="525">+</text>
+  <path id="e-priority-resources" class="causal-edge" data-from="priority" data-to="resources" data-sign="+" d="M1060 610 C1010 690 940 745 900 760"/>
+  <text class="sign" x="985" y="690">+</text>
+  <path id="e-resources-recovery" class="causal-edge" data-from="resources" data-to="recovery" data-sign="+" d="M700 760 H590"/>
+  <text class="sign" x="645" y="744">+</text>
+  <path id="e-recovery-duration" class="causal-edge" data-from="recovery" data-to="duration" data-sign="-" d="M350 760 C200 850 55 810 60 710"/>
+  <text class="sign" x="191" y="822">−</text>
+
+  <rect class="node" x="60" y="390" width="220" height="80" fill="#fef3c7" stroke="#d97706"/>
+  <text class="node-text" x="170" y="423"><tspan x="170">Бытовое неудобство</tspan><tspan x="170" dy="20">для жильцов</tspan></text>
+  <rect class="node" x="350" y="190" width="220" height="80" fill="#fef3c7" stroke="#d97706"/>
+  <text class="node-text" x="460" y="223"><tspan x="460">Воспринимаемая</tspan><tspan x="460" dy="20">срочность</tspan></text>
+  <rect class="node" x="650" y="390" width="240" height="90" fill="#dbeafe" stroke="#2563eb"/>
+  <text class="node-text" x="770" y="425"><tspan x="770">Повторные сообщения</tspan><tspan x="770" dy="20">в чате жильцов</tspan></text>
+  <rect class="node" x="1000" y="190" width="260" height="80" fill="#ffedd5" stroke="#ea580c"/>
+  <text class="node-text" x="1130" y="223"><tspan x="1130">Ощущение, что</tspan><tspan x="1130" dy="20">на проблему не реагируют</tspan></text>
+  <rect class="node" x="60" y="630" width="220" height="80" fill="#ecfdf5" stroke="#16a34a"/>
+  <text class="node-text" x="170" y="663"><tspan x="170">Длительность</tspan><tspan x="170" dy="20">перебоя</tspan></text>
+  <rect class="node" x="1010" y="530" width="240" height="80" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="node-text" x="1130" y="563"><tspan x="1130">Внимание / приоритет</tspan><tspan x="1130" dy="20">УК</tspan></text>
+  <rect class="node" x="700" y="720" width="240" height="80" fill="#f1f5f9" stroke="#64748b"/>
+  <text class="node-text" x="820" y="753"><tspan x="820">Ресурсы на осмотр</tspan><tspan x="820" dy="20">и устранение</tspan></text>
+  <rect class="node" x="350" y="720" width="240" height="80" fill="#ecfdf5" stroke="#16a34a"/>
+  <text class="node-text" x="470" y="753"><tspan x="470">Скорость восстановления</tspan><tspan x="470" dy="20">услуги</tspan></text>
+
+  <rect x="800" y="300" width="400" height="42" rx="21" fill="#eff6ff" stroke="#93c5fd"/>
+  <text class="loop-label" x="1000" y="327" fill="#1d4ed8">R1 — усиливающая: эскалация срочности</text>
+  <rect x="460" y="855" width="470" height="42" rx="21" fill="#fff7ed" stroke="#fdba74"/>
+  <text class="loop-label" x="695" y="882" fill="#9a3412">B1 — балансирующая: восстановление услуги</text>
+
+  <line x1="60" y1="755" x2="95" y2="755" stroke="#475569" stroke-width="2" stroke-dasharray="8 6"/>
+  <text class="caption" x="105" y="760">Все причинные связи — гипотезы; + меняются в одном направлении, − в противоположном.</text>
+  <text class="caption" x="1010" y="825">Ограничитель B1: задержка и доступность бригады/очереди (гипотеза).</text>
+</svg>
